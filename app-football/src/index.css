@@ -40,10 +40,71 @@ a.active{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 15vh;
+  height: 50vh;
+}
+.home h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container h1{
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.notfound h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-size: 30px;
+}
+
+.notfoundbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.container p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .container h1{
-  font-size: 70px;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homebuttons{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+}
+
+.favoritebutton{
+  display: inline-block;
+  align-items: center;
+  justify-content:center;
+  
+}
+
+.teamslistbutton{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 150px;
+  height: auto;
+
 }

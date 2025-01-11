@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button'
+
 import { Outlet, useNavigate } from 'react-router-dom'
 
 const Home = () => {
@@ -11,15 +13,15 @@ const Home = () => {
         <p>You can go to view all the teams, or check out your favorites</p>
         <div className='homebuttons'>
           <div className='favoritebutton'>
-           <button onClick={() => nav('favorites')}>Favorites</button>
+           <Button variant="primary" size="lg" onClick={() => nav('favorites')}>Favorites</Button>
          </div>
         
          <div className='teamslistbutton'>
-            <button onClick={() => nav('teams')}>Teams List</button>
+            <Button variant="primary" size="lg" onClick={() => nav('teams')}>Teams List</Button>
+      
          </div>
         </div>
-        
-        
+      
         <Outlet /> 
     </div>
     

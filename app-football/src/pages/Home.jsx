@@ -7,7 +7,7 @@ const Home = () => {
   const nav = useNavigate();
   return (
     
-    <div>
+    <div className = "home-container">
         <h1>Home</h1>
         <p>Welcome to the Football Teams Info App</p>
         <p>You can go to view all the teams, or check out your favorites</p>
@@ -18,7 +18,7 @@ const Home = () => {
         
          <div className='teamslistbutton'>
             <Button variant="primary" size="lg" onClick={() => nav('teams')}>Teams List</Button>
-      
+
          </div>
         </div>
       

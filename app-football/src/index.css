@@ -234,3 +234,13 @@ p {
 .remove-favorite-button{
   margin-left: 40px;  
 }
+
+.teamslayout{
+  paddingTop: 20px;
+  marginTop: 80px;
+}
+
+.teamslayout h1{
+  text-align: center;
+  margin-bottom: 20px;
+}

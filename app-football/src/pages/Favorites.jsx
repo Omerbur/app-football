@@ -5,7 +5,7 @@ const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    // Load favorites from localStorage
+    
     const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
     setFavorites(storedFavorites);
   }, []);
@@ -13,9 +13,9 @@ const Favorites = () => {
   const removeFromFavorites = (teamId) => {
     const updatedFavorites = favorites.filter((fav) => fav.id !== teamId);
     setFavorites(updatedFavorites);
-    localStorage.setItem("favorites", JSON.stringify(updatedFavorites)); // Update localStorage
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites)); 
 
-    // Trigger a storage event to notify other components
+    
     window.dispatchEvent(new Event("storage"));
   };
 

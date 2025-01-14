@@ -4,7 +4,7 @@ import TeamCard from "../components/TeamCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-const BATCH_SIZE = 10; 
+const BATCH_SIZE = 15; 
 
 const Teams = () => {
   // we fetch our teams into allTeams, we display only those in displayedTeams
@@ -35,7 +35,7 @@ const Teams = () => {
   }, []);
 
   // we checked the parameters of the document to deterimine how to implement 
-  // infinite scrolling, and we display 10 teams at a time
+  // infinite scrolling, and we display 15 teams at a time
   const handleScroll = () => {
     console.log("Height", document.documentElement.scrollHeight);
     console.log("Top:", document.documentElement.scrollTop);

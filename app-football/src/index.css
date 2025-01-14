@@ -20,12 +20,12 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 15px 8%;
-  position: fixed; /* Ensure the navbar stays at the top */
+  position: fixed; 
   top: 0;
-  background-color: white; /* Add background to avoid text overlap */
-  z-index: 1000; /* Keep the navbar above other content */
-  border-bottom: 1px solid #ddd; /* Optional: Add a bottom border */
-  height: 0px; /* Explicitly set navbar height */
+  background-color: white; 
+  z-index: 1000; 
+  border-bottom: 1px solid #ddd; 
+  height: 0px; 
 }
 
 .navbar ul {
@@ -45,8 +45,8 @@ a.active {
 }
 
 body {
-  padding-top: 60px; /* Matches the navbar height */
-  background-color: #f8f9fa; /* Optional background for better visuals */
+  padding-top: 60px; 
+  background-color: #f8f9fa; 
 }
 
 .container {
@@ -59,11 +59,11 @@ body {
 }
 
 .teams-layout {
-  margin-top: 20px; /* Add spacing below the navbar */
+  margin-top: 20px; 
 }
 
 .teams-table-wrapper {
-  margin-top: 40px; /* Push the table down */
+  margin-top: 40px; 
 }
 
 .home h1,
@@ -84,7 +84,7 @@ body {
 }
 
 .teamscards {
-  padding-top: 20px; /* Reduced padding */
+  padding-top: 20px; 
 }
 
 .logo {
@@ -122,7 +122,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 150px;
-  background-color: #f8f9fa; /* Optional background for better visuals */
+  background-color: #f8f9fa; 
   overflow: hidden;
 }
 
@@ -133,8 +133,8 @@ p {
 }
 
 .card {
-  border: 1px solid #ddd; /* Optional: Add border */
-  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -152,9 +152,9 @@ p {
 }
 
 .team-details-container {
-  margin-top: 80px; /* Push the content lower on the page */
-  text-align: center; /* Center all the content */
-  padding: 20px; /* Add padding around the content */
+  margin-top: 80px; 
+  text-align: center; 
+  padding: 20px;
 }
 
 .team-logo-container {
@@ -165,50 +165,50 @@ p {
 }
 
 .team-logo {
-  width: 150px; /* Set the width of the logo */
-  height: 150px; /* Set the height of the logo */
-  object-fit: contain; /* Maintain the aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  border: 2px solid #ddd; /* Add a light border for better visibility */
+  width: 150px; 
+  height: 150px; 
+  object-fit: contain; 
+  border-radius: 8px; 
+  border: 2px solid #ddd; 
   align-items: center;
   justify-content: center;
 }
 
 .team-details-title {
-  font-size: 2rem; /* Increase font size for the title */
-  font-weight: bold; /* Make the title bold */
-  margin-bottom: 20px; /* Add spacing below the title */
+  font-size: 2rem; 
+  font-weight: bold; 
+  margin-bottom: 20px; 
 }
 
 .team-details-info {
-  font-size: 1.2rem; /* Slightly larger font for details */
-  color: #555; /* Softer text color for details */
-  line-height: 1.6; /* Add spacing between lines for readability */
+  font-size: 1.2rem; 
+  color: #555; 
+  line-height: 1.6; 
 }
 
 .team-details-info strong {
-  color: #000; /* Make the labels bold and more prominent */
+  color: #000; 
 }
 
 
-/* Container for the stadium image */
+
 .team-venue-image-container {
-  margin-top: 20px; /* Add spacing above the image */
-  text-align: center; /* Center align the image container */
+  margin-top: 20px; 
+  text-align: center; 
   align-items:center;  
   justify-content: center;
   display:flex;
 }
 
-/* Stadium image styling */
+
 .team-venue-image-container img {
-  width: 300px; /* Set the width of the image */
-  height: 200px; /* Set the height of the image */
-  object-fit: cover; /* Crop the image while maintaining the aspect ratio */
-  border-radius: 8px; /* Add rounded corners */
-  border: 2px solid #ddd; /* Light border for better visibility */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
-  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  border: 2px solid #ddd; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
 }
 
 .no-favorite{

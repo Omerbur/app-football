@@ -7,6 +7,8 @@ import Row from "react-bootstrap/Row";
 const BATCH_SIZE = 10; 
 
 const Teams = () => {
+  // we fetch our teams into allTeams, we display only those in displayedTeams
+  // we track how to load more using the currentIndex
   const [allTeams, setAllTeams] = useState([]); 
   const [displayedTeams, setDisplayedTeams] = useState([]); 
   const [currentIndex, setCurrentIndex] = useState(0); 
@@ -32,7 +34,8 @@ const Teams = () => {
     loadTeams();
   }, []);
 
-  
+  // we checked the parameters of the document to deterimine how to implement 
+  // infinite scrolling, and we display 10 teams at a time
   const handleScroll = () => {
     console.log("Height", document.documentElement.scrollHeight);
     console.log("Top:", document.documentElement.scrollTop);
@@ -45,7 +48,7 @@ const Teams = () => {
     }
   };
 
-  
+  // displaying more teams as we go down the page
   const loadMoreTeams = () => {
     if (loading || !hasMore) return; 
 

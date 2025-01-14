@@ -12,6 +12,7 @@ import TeamDetails from './pages/TeamDetails'
 
 const App = () => {
 
+  // Created a browser router with all the routes defined.
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element ={<RootLayout />} >
@@ -23,6 +24,7 @@ const App = () => {
         <Route path = 'teams' element={<TeamsLayout/>}>
           <Route index element={<Teams/>}/>
         </Route>
+        {/*added the :id to make sure each team had its own route with a details page*/}
         <Route path="/teams/:id" element={<TeamDetails />} />
 
       </Route>
@@ -30,6 +32,7 @@ const App = () => {
   )
 
   return (
+    // returning the router so that it is reachable troughout the app 
     <RouterProvider router= {router} />
   )
 }

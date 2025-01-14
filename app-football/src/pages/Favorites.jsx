@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Button from "@mui/joy/Button";
 
 const Favorites = () => {
+  // we store our favorite teams here, loading it from the local storage.
+  // if we dont have a a team, we return an empty array
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
@@ -32,6 +34,7 @@ const Favorites = () => {
       <h1>Your Favorite Teams</h1>
       <div className="favorite-list">
         <ul>
+          {/* looping through our favorite teams and displaying them */}
           {favorites.map((team) => (
             <li key={team.id}>
               <img

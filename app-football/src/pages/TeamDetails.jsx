@@ -4,6 +4,8 @@ import { fetchTeams } from "../utils/apiService";
 import Heart from "react-animated-heart";
 
 const TeamDetails = () => {
+  // we extrac the id of the team using params.
+  // in teamdata we store all the data of the team and venue
   const { id } = useParams(); 
   const [teamData, setTeamData] = useState(null); 
   const [loading, setLoading] = useState(true);
@@ -80,13 +82,7 @@ const TeamDetails = () => {
           src={team.logo}
           alt={`${team.name} logo`}
           className="team-logo"
-          style={{
-            width: "150px",
-            height: "150px",
-            objectFit: "contain",
-            borderRadius: "8px",
-            marginBottom: "20px",
-          }}
+          
         />
       </div>
       <div className="favorite-button">
@@ -115,11 +111,7 @@ const TeamDetails = () => {
           <img
             src={venue.image}
             alt={`${venue.name} venue`}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-              marginTop: "20px",
-            }}
+        
           />
         )}
       </div>

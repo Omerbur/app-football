@@ -9,4 +9,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"), // Maps `@` to `src/`
     },
   },
+  base: "/app-football"
 });

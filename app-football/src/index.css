@@ -217,7 +217,7 @@ p {
 
 .favorite-list{
   display: flex;
-  alignItems: center;
+  align-items: center;
   margin-bottom: 10px;
   margin-top: 10px;
   justify-content: center;
@@ -236,8 +236,8 @@ p {
 }
 
 .teamslayout{
-  paddingTop: 20px;
-  marginTop: 80px;
+  padding-top: 20px;
+  margin-top: 80px;
 }
 
 .teamslayout h1{

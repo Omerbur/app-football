@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react'
 
 
 
-/* fetchs all the teams from 2024 and displays them from the top leagues
+/* fetchs all the teams from 2023 and displays them from the top leagues
   more teams can be adde if needed.
 */
 export const fetchTeams = async () => {

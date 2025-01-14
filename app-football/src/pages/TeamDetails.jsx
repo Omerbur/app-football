@@ -4,8 +4,8 @@ import { fetchTeams } from "../utils/apiService";
 import Heart from "react-animated-heart";
 
 const TeamDetails = () => {
-  const { id } = useParams(); // Extract team ID from the URL
-  const [teamData, setTeamData] = useState(null); // Holds the entire team object (team + venue)
+  const { id } = useParams(); 
+  const [teamData, setTeamData] = useState(null); 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isFavorite, setIsFavorite] = useState(false);
@@ -14,11 +14,11 @@ const TeamDetails = () => {
     const loadTeamDetails = async () => {
       setLoading(true);
       try {
-        const teams = await fetchTeams(); // Fetch all teams
+        const teams = await fetchTeams(); 
         const selectedTeam = teams.find(
           (teamObj) => teamObj.team.id.toString() === id
-        ); // Find the team by ID
-        setTeamData(selectedTeam || null); // Save the entire object (team + venue)
+        ); 
+        setTeamData(selectedTeam || null); 
 
         const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
         setIsFavorite(
@@ -35,7 +35,7 @@ const TeamDetails = () => {
     loadTeamDetails();
   }, [id]);
 
-  // Listen to changes in localStorage to sync the favorite state
+  
   useEffect(() => {
     const handleStorageChange = () => {
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -55,10 +55,10 @@ const TeamDetails = () => {
     let updatedFavorites;
 
     if (isFavorite) {
-      // Remove from favorites
+      
       updatedFavorites = favorites.filter((fav) => fav.id !== teamData.team.id);
     } else {
-      // Add to favorites
+      
       updatedFavorites = [...favorites, teamData.team];
     }
 
